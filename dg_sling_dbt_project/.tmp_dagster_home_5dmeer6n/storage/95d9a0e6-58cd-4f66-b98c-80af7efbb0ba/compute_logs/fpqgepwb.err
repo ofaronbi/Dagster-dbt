@@ -1,0 +1,8 @@
+[32m2025-06-17 00:23:24 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 95d9a0e6-58cd-4f66-b98c-80af7efbb0ba - 66761 - LOGS_CAPTURED - Started capturing logs in process (pid: 66761).
+[32m2025-06-17 00:23:24 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 95d9a0e6-58cd-4f66-b98c-80af7efbb0ba - 66761 - drivers_asset - STEP_START - Started execution of step "drivers_asset".
+[32m2025-06-17 00:23:24 -0400[0m - dagster - [34mINFO[0m - __ASSET_JOB - 95d9a0e6-58cd-4f66-b98c-80af7efbb0ba - drivers_asset - Declaring upstream dependency only for drivers.
+[32m2025-06-17 00:23:24 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 95d9a0e6-58cd-4f66-b98c-80af7efbb0ba - 66761 - drivers_asset - STEP_OUTPUT - Yielded output "result" of type "Any". (Type check passed).
+[32m2025-06-17 00:23:24 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 95d9a0e6-58cd-4f66-b98c-80af7efbb0ba - drivers_asset - Writing file at: /Users/opeyemifaronbi/Desktop/dagstar/dagster_university/Dagster-dbt/dg_sling_dbt_project/.tmp_dagster_home_5dmeer6n/storage/drivers_asset using PickledObjectFilesystemIOManager...
+[32m2025-06-17 00:23:24 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 95d9a0e6-58cd-4f66-b98c-80af7efbb0ba - 66761 - drivers_asset - ASSET_MATERIALIZATION - Materialized value drivers_asset.
+[32m2025-06-17 00:23:24 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 95d9a0e6-58cd-4f66-b98c-80af7efbb0ba - 66761 - drivers_asset - HANDLED_OUTPUT - Handled output "result" using IO manager "io_manager"
+[32m2025-06-17 00:23:24 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 95d9a0e6-58cd-4f66-b98c-80af7efbb0ba - 66761 - drivers_asset - STEP_SUCCESS - Finished execution of step "drivers_asset" in 201ms.

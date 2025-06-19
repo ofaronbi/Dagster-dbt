@@ -1,0 +1,132 @@
+source: LOCAL
+target: MySQL_conn
+
+defaults:
+  mode: full-refresh
+  object: 'f1_raw.{stream_file_name}'
+
+streams:
+  # expand all files into individual streams, each file will load into its own table
+  # "file:////Users/opeyemifaronbi/Desktop/dagstar/f1db_csv/*.csv":
+  #   object: 'f1_raw.{stream_file_name}'
+  #   columns:
+  #     "*": string
+  #   source_options:
+  #     format: csv
+
+  "file:////Users/opeyemifaronbi/Desktop/dagstar/f1db_csv/circuits.csv":
+      object: 'f1_raw.circuits'  
+      columns:
+        "*": string
+      source_options:
+        format: csv
+    
+
+  "file:////Users/opeyemifaronbi/Desktop/dagstar/f1db_csv/status.csv":
+    object: 'f1_raw.status'  
+    columns:
+      "*": string
+    source_options:
+      format: csv
+    
+
+  "file:////Users/opeyemifaronbi/Desktop/dagstar/f1db_csv/lap_times.csv":
+    object: 'f1_raw.lap_times'  
+    columns:
+      "*": string
+    source_options:
+      format: csv
+    
+
+  "file:////Users/opeyemifaronbi/Desktop/dagstar/f1db_csv/sprint_results.csv":
+    object: 'f1_raw.sprint_results'  
+    columns:
+      "*": string
+    source_options:
+      format: csv
+    
+
+  "file:////Users/opeyemifaronbi/Desktop/dagstar/f1db_csv/drivers.csv":
+    object: 'f1_raw.drivers'  
+    columns:
+      "*": string
+    source_options:
+      format: csv
+    
+
+  "file:////Users/opeyemifaronbi/Desktop/dagstar/f1db_csv/races.csv":
+    object: 'f1_raw.races'  
+    columns:
+      "*": string
+    source_options:
+      format: csv
+    
+
+  "file:////Users/opeyemifaronbi/Desktop/dagstar/f1db_csv/constructors.csv":
+    object: 'f1_raw.constructors'  
+    columns:
+      "*": string
+    source_options:
+      format: csv
+    
+
+  "file:////Users/opeyemifaronbi/Desktop/dagstar/f1db_csv/constructor_standings.csv":
+    object: 'f1_raw.constructor_standings'  
+    columns:
+      "*": string
+    source_options:
+      format: csv
+    
+
+  "file:////Users/opeyemifaronbi/Desktop/dagstar/f1db_csv/qualifying.csv":
+    object: 'f1_raw.qualifying'  
+    columns:
+      "*": string
+    source_options:
+      format: csv
+    
+
+  "file:////Users/opeyemifaronbi/Desktop/dagstar/f1db_csv/driver_standings.csv":
+    object: 'f1_raw.driver_standings'  
+    columns:
+      "*": string
+    source_options:
+      format: csv
+    
+
+  "file:////Users/opeyemifaronbi/Desktop/dagstar/f1db_csv/constructor_results.csv":
+    object: 'f1_raw.constructor_results'  
+    columns:
+      "*": string
+    source_options:
+      format: csv
+    
+
+  "file:////Users/opeyemifaronbi/Desktop/dagstar/f1db_csv/pit_stops.csv":
+    object: 'f1_raw.pit_stops'  
+    columns:
+      "*": string
+    source_options:
+      format: csv
+    
+
+  "file:////Users/opeyemifaronbi/Desktop/dagstar/f1db_csv/seasons.csv":
+    object: 'f1_raw.seasons'  
+    columns:
+      "*": string
+    source_options:
+      format: csv
+    
+
+  "file:////Users/opeyemifaronbi/Desktop/dagstar/f1db_csv/results.csv":
+    object: 'f1_raw.results'  
+    columns:
+      "*": string
+    source_options:
+      format: csv
+
+env:
+  SLING_SAMPLE_SIZE: 2000 # increase the sample size to infer types (default=900).
+  SLING_STREAM_URL_COLUMN: true # adds a _sling_stream_url column with file path
+  SLING_THREADS: 3 # run streams concurrently
+  

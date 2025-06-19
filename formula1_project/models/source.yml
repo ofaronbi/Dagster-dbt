@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: formula1
+    schema: f1_raw
+    tables:
+      - name: races
+      - name: drivers

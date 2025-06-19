@@ -1,0 +1,8 @@
+[32m2025-06-17 00:23:24 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 95d9a0e6-58cd-4f66-b98c-80af7efbb0ba - 66762 - LOGS_CAPTURED - Started capturing logs in process (pid: 66762).
+[32m2025-06-17 00:23:24 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 95d9a0e6-58cd-4f66-b98c-80af7efbb0ba - 66762 - races_asset - STEP_START - Started execution of step "races_asset".
+[32m2025-06-17 00:23:24 -0400[0m - dagster - [34mINFO[0m - __ASSET_JOB - 95d9a0e6-58cd-4f66-b98c-80af7efbb0ba - races_asset - Declaring upstream dependency only for races.
+[32m2025-06-17 00:23:24 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 95d9a0e6-58cd-4f66-b98c-80af7efbb0ba - 66762 - races_asset - STEP_OUTPUT - Yielded output "result" of type "Any". (Type check passed).
+[32m2025-06-17 00:23:24 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 95d9a0e6-58cd-4f66-b98c-80af7efbb0ba - races_asset - Writing file at: /Users/opeyemifaronbi/Desktop/dagstar/dagster_university/Dagster-dbt/dg_sling_dbt_project/.tmp_dagster_home_5dmeer6n/storage/races_asset using PickledObjectFilesystemIOManager...
+[32m2025-06-17 00:23:24 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 95d9a0e6-58cd-4f66-b98c-80af7efbb0ba - 66762 - races_asset - ASSET_MATERIALIZATION - Materialized value races_asset.
+[32m2025-06-17 00:23:24 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 95d9a0e6-58cd-4f66-b98c-80af7efbb0ba - 66762 - races_asset - HANDLED_OUTPUT - Handled output "result" using IO manager "io_manager"
+[32m2025-06-17 00:23:24 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 95d9a0e6-58cd-4f66-b98c-80af7efbb0ba - 66762 - races_asset - STEP_SUCCESS - Finished execution of step "races_asset" in 202ms.
