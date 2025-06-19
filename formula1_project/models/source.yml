@@ -4,5 +4,16 @@ sources:
   - name: formula1
     schema: f1_raw
     tables:
-      - name: races
+      - name: circuits
+      - name: status
+      - name: lap_times
+      - name: sprint_results
       - name: drivers
+      - name: races
+      - name: constructors
+      - name: constructor_standings
+      - name: qualifying
+      - name: driver_standings
+      - name: constructor_results
+      - name: pit_stops
+      - name: seasons
