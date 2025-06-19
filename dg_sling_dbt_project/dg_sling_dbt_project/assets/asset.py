@@ -2,7 +2,7 @@ from typing import Mapping
 from dagster_sling import DagsterSlingTranslator, SlingResource, sling_assets
 from dagster import Any, AssetIn, AssetExecutionContext, AssetKey, AssetSpec, asset, file_relative_path
 from dagster_sling.asset_decorator import get_streams_from_replication
-from dagster_dbt import DbtCliResource, dbt_assets
+from dagster_dbt import DagsterDbtTranslator, DbtCliResource, dbt_assets
 from ..resources.sling_resources import formula1_project
 import os
 
@@ -30,6 +30,22 @@ class CustomDagsterSlingTranslator(DagsterSlingTranslator):
         )
 
 
+class CustomizedDagsterDbtTranslator(DagsterDbtTranslator):
+    def get_asset_key(self, dbt_resource_props):
+        resource_type = dbt_resource_props["resource_type"]
+        name = dbt_resource_props["name"]
+
+        if resource_type == "source":
+            return AssetKey(["Formula1_Dataset",name])
+        else:
+            return super().get_asset_key(dbt_resource_props)
+
+    def get_group_name(self, dbt_resource_props):
+        if dbt_resource_props["resource_type"] == "source":
+            return "DBT_MySQL_Sources"
+        else:
+            return "DBT_Models" 
+
 
 @sling_assets(
         replication_config=replication_config,
@@ -41,6 +57,8 @@ def sling_asset(context: AssetExecutionContext, sling: SlingResource):
         context.log.info(row)
 
 
-@dbt_assets(manifest = formula1_project.manifest_path)
+@dbt_assets(
+        manifest = formula1_project.manifest_path,
+        dagster_dbt_translator=CustomizedDagsterDbtTranslator())
 def dbt_formula1_project(context: AssetExecutionContext, dbt: DbtCliResource):
     yield from dbt.cli(["build"], context=context).stream()
