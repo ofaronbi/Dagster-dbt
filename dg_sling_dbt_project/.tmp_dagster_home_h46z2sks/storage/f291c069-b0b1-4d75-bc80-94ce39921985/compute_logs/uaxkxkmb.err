@@ -1,0 +1,80 @@
+[32m2025-06-20 01:27:29 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - f291c069-b0b1-4d75-bc80-94ce39921985 - 56710 - LOGS_CAPTURED - Started capturing logs in process (pid: 56710).
+[32m2025-06-20 01:27:29 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - f291c069-b0b1-4d75-bc80-94ce39921985 - 56710 - dbt_formula1_project - STEP_START - Started execution of step "dbt_formula1_project".
+[32m2025-06-20 01:27:29 -0400[0m - dagster - [34mINFO[0m - __ASSET_JOB - f291c069-b0b1-4d75-bc80-94ce39921985 - dbt_formula1_project - A dbt subsetted execution is not being performed. Using the default dbt selection arguments `['--select', 'fqn:*']`.
+[32m2025-06-20 01:27:29 -0400[0m - dagster - [34mINFO[0m - __ASSET_JOB - f291c069-b0b1-4d75-bc80-94ce39921985 - dbt_formula1_project - Copying `/Users/opeyemifaronbi/Desktop/dagstar/dagster_university/Dagster-dbt/formula1_project/target/partial_parse.msgpack` to `/Users/opeyemifaronbi/Desktop/dagstar/dagster_university/Dagster-dbt/formula1_project/target/dbt_formula1_project-f291c06-ff5851b/partial_parse.msgpack` to take advantage of partial parsing.
+[32m2025-06-20 01:27:29 -0400[0m - dagster - [34mINFO[0m - __ASSET_JOB - f291c069-b0b1-4d75-bc80-94ce39921985 - dbt_formula1_project - Running dbt command: `dbt build --profile formula1_project --target dev --select fqn:*`.
+[32m2025-06-20 01:27:35 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - f291c069-b0b1-4d75-bc80-94ce39921985 - 56710 - dbt_formula1_project - STEP_OUTPUT - Yielded output "Dagster_dbt_staging__circuits_stg" of type "Nothing". (Type check passed).
+[32m2025-06-20 01:27:35 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - f291c069-b0b1-4d75-bc80-94ce39921985 - 56710 - dbt_formula1_project - ASSET_MATERIALIZATION - Materialized value Dagster_dbt_staging circuits_stg.
+[32m2025-06-20 01:27:36 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - f291c069-b0b1-4d75-bc80-94ce39921985 - 56710 - dbt_formula1_project - STEP_OUTPUT - Yielded output "Dagster_dbt_staging__constructor_results_stg" of type "Nothing". (Type check passed).
+[32m2025-06-20 01:27:36 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - f291c069-b0b1-4d75-bc80-94ce39921985 - 56710 - dbt_formula1_project - ASSET_MATERIALIZATION - Materialized value Dagster_dbt_staging constructor_results_stg.
+[32m2025-06-20 01:27:36 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - f291c069-b0b1-4d75-bc80-94ce39921985 - 56710 - dbt_formula1_project - STEP_OUTPUT - Yielded output "Dagster_dbt_staging__constructor_standings_stg" of type "Nothing". (Type check passed).
+[32m2025-06-20 01:27:37 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - f291c069-b0b1-4d75-bc80-94ce39921985 - 56710 - dbt_formula1_project - ASSET_MATERIALIZATION - Materialized value Dagster_dbt_staging constructor_standings_stg.
+[32m2025-06-20 01:27:37 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - f291c069-b0b1-4d75-bc80-94ce39921985 - 56710 - dbt_formula1_project - STEP_OUTPUT - Yielded output "Dagster_dbt_staging__constructors_stg" of type "Nothing". (Type check passed).
+[32m2025-06-20 01:27:37 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - f291c069-b0b1-4d75-bc80-94ce39921985 - 56710 - dbt_formula1_project - ASSET_MATERIALIZATION - Materialized value Dagster_dbt_staging constructors_stg.
+[32m2025-06-20 01:27:38 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - f291c069-b0b1-4d75-bc80-94ce39921985 - 56710 - dbt_formula1_project - STEP_OUTPUT - Yielded output "Dagster_dbt_staging__driver_standings_stg" of type "Nothing". (Type check passed).
+[32m2025-06-20 01:27:38 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - f291c069-b0b1-4d75-bc80-94ce39921985 - 56710 - dbt_formula1_project - ASSET_MATERIALIZATION - Materialized value Dagster_dbt_staging driver_standings_stg.
+[32m2025-06-20 01:27:38 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - f291c069-b0b1-4d75-bc80-94ce39921985 - 56710 - dbt_formula1_project - STEP_OUTPUT - Yielded output "Dagster_dbt_staging__drivers_stg" of type "Nothing". (Type check passed).
+[32m2025-06-20 01:27:38 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - f291c069-b0b1-4d75-bc80-94ce39921985 - 56710 - dbt_formula1_project - ASSET_MATERIALIZATION - Materialized value Dagster_dbt_staging drivers_stg.
+[32m2025-06-20 01:27:44 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - f291c069-b0b1-4d75-bc80-94ce39921985 - 56710 - dbt_formula1_project - STEP_OUTPUT - Yielded output "Dagster_dbt_staging__lap_times_stg" of type "Nothing". (Type check passed).
+[32m2025-06-20 01:27:44 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - f291c069-b0b1-4d75-bc80-94ce39921985 - 56710 - dbt_formula1_project - ASSET_MATERIALIZATION - Materialized value Dagster_dbt_staging lap_times_stg.
+[32m2025-06-20 01:27:44 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - f291c069-b0b1-4d75-bc80-94ce39921985 - 56710 - dbt_formula1_project - STEP_OUTPUT - Yielded output "Dagster_dbt_staging__pit_stops_stg" of type "Nothing". (Type check passed).
+[32m2025-06-20 01:27:44 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - f291c069-b0b1-4d75-bc80-94ce39921985 - 56710 - dbt_formula1_project - ASSET_MATERIALIZATION - Materialized value Dagster_dbt_staging pit_stops_stg.
+[32m2025-06-20 01:27:45 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - f291c069-b0b1-4d75-bc80-94ce39921985 - 56710 - dbt_formula1_project - STEP_OUTPUT - Yielded output "Dagster_dbt_staging__qualifying_stg" of type "Nothing". (Type check passed).
+[32m2025-06-20 01:27:45 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - f291c069-b0b1-4d75-bc80-94ce39921985 - 56710 - dbt_formula1_project - ASSET_MATERIALIZATION - Materialized value Dagster_dbt_staging qualifying_stg.
+[32m2025-06-20 01:27:45 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - f291c069-b0b1-4d75-bc80-94ce39921985 - 56710 - dbt_formula1_project - STEP_OUTPUT - Yielded output "Dagster_dbt_staging__race_stg" of type "Nothing". (Type check passed).
+[32m2025-06-20 01:27:45 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - f291c069-b0b1-4d75-bc80-94ce39921985 - 56710 - dbt_formula1_project - ASSET_MATERIALIZATION - Materialized value Dagster_dbt_staging race_stg.
+[32m2025-06-20 01:27:46 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - f291c069-b0b1-4d75-bc80-94ce39921985 - 56710 - dbt_formula1_project - STEP_OUTPUT - Yielded output "Dagster_dbt_staging__seasons_stg" of type "Nothing". (Type check passed).
+[32m2025-06-20 01:27:46 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - f291c069-b0b1-4d75-bc80-94ce39921985 - 56710 - dbt_formula1_project - ASSET_MATERIALIZATION - Materialized value Dagster_dbt_staging seasons_stg.
+[32m2025-06-20 01:27:46 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - f291c069-b0b1-4d75-bc80-94ce39921985 - 56710 - dbt_formula1_project - STEP_OUTPUT - Yielded output "Dagster_dbt_staging__status_stg" of type "Nothing". (Type check passed).
+[32m2025-06-20 01:27:46 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - f291c069-b0b1-4d75-bc80-94ce39921985 - 56710 - dbt_formula1_project - ASSET_MATERIALIZATION - Materialized value Dagster_dbt_staging status_stg.
+[32m2025-06-20 01:27:46 -0400[0m - dagster - [34mINFO[0m - __ASSET_JOB - f291c069-b0b1-4d75-bc80-94ce39921985 - dbt_formula1_project - Finished dbt command: `dbt build --profile formula1_project --target dev --select fqn:*`.
+[32m2025-06-20 01:27:46 -0400[0m - dagster - [34mERROR[0m - [31m__ASSET_JOB - f291c069-b0b1-4d75-bc80-94ce39921985 - 56710 - dbt_formula1_project - STEP_FAILURE - Execution of step "dbt_formula1_project" failed.
+
+dagster_dbt.errors.DagsterDbtCliRuntimeError: The dbt CLI process with command
+
+`dbt build --profile formula1_project --target dev --select fqn:*`
+
+failed with exit code `1`. Check the stdout in the Dagster compute logs for the full information about the error, or view the dbt debug log: /Users/opeyemifaronbi/Desktop/dagstar/dagster_university/Dagster-dbt/formula1_project/target/dbt_formula1_project-f291c06-ff5851b/dbt.log.
+
+Errors parsed from dbt logs:
+
+11 of 14 ERROR creating sql table model Dagster_dbt_staging.results_stg ........ [[31mERROR[0m in 0.72s]
+
+13 of 14 ERROR creating sql table model Dagster_dbt_staging.sprint_results_stg . [[31mERROR[0m in 0.06s]
+
+  Database Error in model results_stg (models/staging/results_stg.sql)
+  1292 (22007): Truncated incorrect INTEGER value: '\N'
+  compiled Code at target/dbt_formula1_project-f291c06-ff5851b/run/formula1_project/models/staging/results_stg.sql
+
+  Database Error in model sprint_results_stg (models/staging/sprint_results_stg.sql)
+  1292 (22007): Truncated incorrect INTEGER value: '\N'
+  compiled Code at target/dbt_formula1_project-f291c06-ff5851b/run/formula1_project/models/staging/sprint_results_stg.sql
+
+Stack Trace:
+  File "/Users/opeyemifaronbi/Desktop/dagstar/dagster_university/Dagster-dbt/.venv/lib/python3.11/site-packages/dagster/_core/execution/plan/execute_plan.py", line 246, in dagster_event_sequence_for_step
+    yield from check.generator(step_events)
+  File "/Users/opeyemifaronbi/Desktop/dagstar/dagster_university/Dagster-dbt/.venv/lib/python3.11/site-packages/dagster/_core/execution/plan/execute_step.py", line 502, in core_dagster_event_sequence_for_step
+    for user_event in _step_output_error_checked_user_event_sequence(
+  File "/Users/opeyemifaronbi/Desktop/dagstar/dagster_university/Dagster-dbt/.venv/lib/python3.11/site-packages/dagster/_core/execution/plan/execute_step.py", line 183, in _step_output_error_checked_user_event_sequence
+    for user_event in user_event_sequence:
+  File "/Users/opeyemifaronbi/Desktop/dagstar/dagster_university/Dagster-dbt/.venv/lib/python3.11/site-packages/dagster/_core/execution/plan/execute_step.py", line 90, in _process_asset_results_to_events
+    for user_event in user_event_sequence:
+  File "/Users/opeyemifaronbi/Desktop/dagstar/dagster_university/Dagster-dbt/.venv/lib/python3.11/site-packages/dagster/_core/execution/plan/compute.py", line 187, in execute_core_compute
+    for step_output in _yield_compute_results(step_context, inputs, compute_fn, compute_context):
+  File "/Users/opeyemifaronbi/Desktop/dagstar/dagster_university/Dagster-dbt/.venv/lib/python3.11/site-packages/dagster/_core/execution/plan/compute.py", line 156, in _yield_compute_results
+    for event in iterate_with_context(
+  File "/Users/opeyemifaronbi/Desktop/dagstar/dagster_university/Dagster-dbt/.venv/lib/python3.11/site-packages/dagster/_utils/__init__.py", line 392, in iterate_with_context
+    next_output = next(iterator)
+                  ^^^^^^^^^^^^^^
+  File "/Users/opeyemifaronbi/Desktop/dagstar/dagster_university/Dagster-dbt/dg_sling_dbt_project/dg_sling_dbt_project/assets/asset.py", line 64, in dbt_formula1_project
+    yield from dbt.cli(["build"], context=context).stream()
+  File "/Users/opeyemifaronbi/Desktop/dagstar/dagster_university/Dagster-dbt/.venv/lib/python3.11/site-packages/dagster_dbt/core/dbt_event_iterator.py", line 206, in __next__
+    return next(self._inner_iterator)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/opeyemifaronbi/Desktop/dagstar/dagster_university/Dagster-dbt/.venv/lib/python3.11/site-packages/dagster_dbt/core/dbt_cli_invocation.py", line 276, in _stream_asset_events
+    for event in self.stream_raw_events():
+  File "/Users/opeyemifaronbi/Desktop/dagstar/dagster_university/Dagster-dbt/.venv/lib/python3.11/site-packages/dagster_dbt/core/dbt_cli_invocation.py", line 368, in stream_raw_events
+    self._raise_on_error()
+  File "/Users/opeyemifaronbi/Desktop/dagstar/dagster_university/Dagster-dbt/.venv/lib/python3.11/site-packages/dagster_dbt/core/dbt_cli_invocation.py", line 461, in _raise_on_error
+    raise error
+[0m

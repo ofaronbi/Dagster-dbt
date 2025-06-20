@@ -1,0 +1,19 @@
+Running with dbt=1.7.19
+Registered adapter: mysql=1.7.0
+Unable to do partial parsing because config vars, config profile, or config target have changed
+Found 14 models, 14 sources, 0 exposures, 0 metrics, 390 macros, 0 groups, 0 semantic models
+
+Concurrency: 1 threads (target='dev')
+
+1 of 1 START sql table model Dagster_dbt_staging.results_stg ................... [RUN]
+1 of 1 ERROR creating sql table model Dagster_dbt_staging.results_stg .......... [[31mERROR[0m in 0.63s]
+
+Finished running 1 table model in 0 hours 0 minutes and 0.75 seconds (0.75s).
+
+[31mCompleted with 1 error and 0 warnings:[0m
+
+  Database Error in model results_stg (models/staging/results_stg.sql)
+  1292 (22007): Truncated incorrect INTEGER value: '\N'
+  compiled Code at target/dbt_formula1_project-94b9483-d5670f8/run/formula1_project/models/staging/results_stg.sql
+
+Done. PASS=0 WARN=0 ERROR=1 SKIP=0 TOTAL=1
