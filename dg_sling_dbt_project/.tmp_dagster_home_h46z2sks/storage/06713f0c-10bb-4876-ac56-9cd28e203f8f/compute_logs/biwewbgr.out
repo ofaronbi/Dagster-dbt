@@ -1,0 +1,53 @@
+Running with dbt=1.7.19
+Registered adapter: mysql=1.7.0
+Unable to do partial parsing because config vars, config profile, or config target have changed
+Found 14 models, 14 sources, 0 exposures, 0 metrics, 390 macros, 0 groups, 0 semantic models
+
+Concurrency: 1 threads (target='dev')
+
+1 of 14 START sql table model Dagster_dbt_staging.circuits_stg ................. [RUN]
+1 of 14 OK created sql table model Dagster_dbt_staging.circuits_stg ............ [[32mSUCCESS 77[0m in 0.15s]
+2 of 14 START sql table model Dagster_dbt_staging.constructor_results_stg ...... [RUN]
+2 of 14 OK created sql table model Dagster_dbt_staging.constructor_results_stg . [[32mSUCCESS 12625[0m in 0.25s]
+3 of 14 START sql table model Dagster_dbt_staging.constructor_standings_stg .... [RUN]
+3 of 14 OK created sql table model Dagster_dbt_staging.constructor_standings_stg  [[32mSUCCESS 13391[0m in 0.36s]
+4 of 14 START sql table model Dagster_dbt_staging.constructors_stg ............. [RUN]
+4 of 14 OK created sql table model Dagster_dbt_staging.constructors_stg ........ [[32mSUCCESS 212[0m in 0.08s]
+5 of 14 START sql table model Dagster_dbt_staging.driver_standings_stg ......... [RUN]
+5 of 14 OK created sql table model Dagster_dbt_staging.driver_standings_stg .... [[32mSUCCESS 34863[0m in 0.47s]
+6 of 14 START sql table model Dagster_dbt_staging.drivers_stg .................. [RUN]
+6 of 14 ERROR creating sql table model Dagster_dbt_staging.drivers_stg ......... [[31mERROR[0m in 0.07s]
+7 of 14 START sql table model Dagster_dbt_staging.lap_times_stg ................ [RUN]
+7 of 14 OK created sql table model Dagster_dbt_staging.lap_times_stg ........... [[32mSUCCESS 589081[0m in 5.76s]
+8 of 14 START sql table model Dagster_dbt_staging.pit_stops_stg ................ [RUN]
+8 of 14 OK created sql table model Dagster_dbt_staging.pit_stops_stg ........... [[32mSUCCESS 11371[0m in 0.22s]
+9 of 14 START sql table model Dagster_dbt_staging.qualifying_stg ............... [RUN]
+9 of 14 OK created sql table model Dagster_dbt_staging.qualifying_stg .......... [[32mSUCCESS 10494[0m in 0.23s]
+10 of 14 START sql table model Dagster_dbt_staging.race_stg .................... [RUN]
+10 of 14 OK created sql table model Dagster_dbt_staging.race_stg ............... [[32mSUCCESS 1125[0m in 0.10s]
+11 of 14 START sql table model Dagster_dbt_staging.results_stg ................. [RUN]
+11 of 14 ERROR creating sql table model Dagster_dbt_staging.results_stg ........ [[31mERROR[0m in 0.57s]
+12 of 14 START sql table model Dagster_dbt_staging.seasons_stg ................. [RUN]
+12 of 14 OK created sql table model Dagster_dbt_staging.seasons_stg ............ [[32mSUCCESS 75[0m in 0.07s]
+13 of 14 START sql table model Dagster_dbt_staging.sprint_results_stg .......... [RUN]
+13 of 14 ERROR creating sql table model Dagster_dbt_staging.sprint_results_stg . [[31mERROR[0m in 0.06s]
+14 of 14 START sql table model Dagster_dbt_staging.status_stg .................. [RUN]
+14 of 14 OK created sql table model Dagster_dbt_staging.status_stg ............. [[32mSUCCESS 139[0m in 0.09s]
+
+Finished running 14 table models in 0 hours 0 minutes and 8.78 seconds (8.78s).
+
+[31mCompleted with 3 errors and 0 warnings:[0m
+
+  Database Error in model drivers_stg (models/staging/drivers_stg.sql)
+  1292 (22007): Truncated incorrect INTEGER value: '\N'
+  compiled Code at target/dbt_formula1_project-06713f0-5b2438b/run/formula1_project/models/staging/drivers_stg.sql
+
+  Database Error in model results_stg (models/staging/results_stg.sql)
+  1292 (22007): Truncated incorrect INTEGER value: '\N'
+  compiled Code at target/dbt_formula1_project-06713f0-5b2438b/run/formula1_project/models/staging/results_stg.sql
+
+  Database Error in model sprint_results_stg (models/staging/sprint_results_stg.sql)
+  1292 (22007): Truncated incorrect INTEGER value: '\N'
+  compiled Code at target/dbt_formula1_project-06713f0-5b2438b/run/formula1_project/models/staging/sprint_results_stg.sql
+
+Done. PASS=11 WARN=0 ERROR=3 SKIP=0 TOTAL=14

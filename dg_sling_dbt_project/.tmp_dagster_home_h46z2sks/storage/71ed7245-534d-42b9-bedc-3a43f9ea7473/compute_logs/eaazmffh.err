@@ -1,0 +1,474 @@
+[32m2025-06-20 01:20:15 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - 56308 - LOGS_CAPTURED - Started capturing logs in process (pid: 56308).
+[32m2025-06-20 01:20:15 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - 56308 - sling_asset - STEP_START - Started execution of step "sling_asset".
+[32m2025-06-20 01:20:15 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - Replication config: {'source': 'LOCAL', 'target': 'MySQL_conn', 'defaults': {'mode': 'full-refresh', 'object': 'f1_raw.{stream_file_name}'}, 'streams': {'file:////Users/opeyemifaronbi/Desktop/dagstar/f1db_csv/circuits.csv': {'object': 'f1_raw.circuits', 'columns': {'*': 'string'}, 'source_options': {'format': 'csv'}}, 'file:////Users/opeyemifaronbi/Desktop/dagstar/f1db_csv/status.csv': {'object': 'f1_raw.status', 'columns': {'*': 'string'}, 'source_options': {'format': 'csv'}}, 'file:////Users/opeyemifaronbi/Desktop/dagstar/f1db_csv/lap_times.csv': {'object': 'f1_raw.lap_times', 'columns': {'*': 'string'}, 'source_options': {'format': 'csv'}}, 'file:////Users/opeyemifaronbi/Desktop/dagstar/f1db_csv/sprint_results.csv': {'object': 'f1_raw.sprint_results', 'columns': {'*': 'string'}, 'source_options': {'format': 'csv'}}, 'file:////Users/opeyemifaronbi/Desktop/dagstar/f1db_csv/drivers.csv': {'object': 'f1_raw.drivers', 'columns': {'*': 'string'}, 'source_options': {'format': 'csv'}}, 'file:////Users/opeyemifaronbi/Desktop/dagstar/f1db_csv/races.csv': {'object': 'f1_raw.races', 'columns': {'*': 'string'}, 'source_options': {'format': 'csv'}}, 'file:////Users/opeyemifaronbi/Desktop/dagstar/f1db_csv/constructors.csv': {'object': 'f1_raw.constructors', 'columns': {'*': 'string'}, 'source_options': {'format': 'csv'}}, 'file:////Users/opeyemifaronbi/Desktop/dagstar/f1db_csv/constructor_standings.csv': {'object': 'f1_raw.constructor_standings', 'columns': {'*': 'string'}, 'source_options': {'format': 'csv'}}, 'file:////Users/opeyemifaronbi/Desktop/dagstar/f1db_csv/qualifying.csv': {'object': 'f1_raw.qualifying', 'columns': {'*': 'string'}, 'source_options': {'format': 'csv'}}, 'file:////Users/opeyemifaronbi/Desktop/dagstar/f1db_csv/driver_standings.csv': {'object': 'f1_raw.driver_standings', 'columns': {'*': 'string'}, 'source_options': {'format': 'csv'}}, 'file:////Users/opeyemifaronbi/Desktop/dagstar/f1db_csv/constructor_results.csv': {'object': 'f1_raw.constructor_results', 'columns': {'*': 'string'}, 'source_options': {'format': 'csv'}}, 'file:////Users/opeyemifaronbi/Desktop/dagstar/f1db_csv/pit_stops.csv': {'object': 'f1_raw.pit_stops', 'columns': {'*': 'string'}, 'source_options': {'format': 'csv'}}, 'file:////Users/opeyemifaronbi/Desktop/dagstar/f1db_csv/seasons.csv': {'object': 'f1_raw.seasons', 'columns': {'*': 'string'}, 'source_options': {'format': 'csv'}}, 'file:////Users/opeyemifaronbi/Desktop/dagstar/f1db_csv/results.csv': {'object': 'f1_raw.results', 'columns': {'*': 'string'}, 'source_options': {'format': 'csv'}}}, 'env': {'SLING_SAMPLE_SIZE': 2000, 'SLING_STREAM_URL_COLUMN': True, 'SLING_THREADS': 3}}
+[32m2025-06-20 01:20:15 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - Running Sling replication with command: /Users/opeyemifaronbi/Desktop/dagstar/dagster_university/Dagster-dbt/.venv/lib/python3.11/site-packages/sling_mac_amd64/bin/sling-mac-amd64 run  -r /var/folders/1w/jy6b27b909b2827nw21d9cmw0000gn/T/sling-replication-13099011-1a89-4613-9440-5e9cbe7ee7ed.json
+[32m2025-06-20 01:21:12 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:20AM  Sling CLI | https://slingdata.io
+
+[32m2025-06-20 01:21:12 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:20AM WRN invalid or missing token. Please see https://docs.slingdata.io/sling-cli/cli-pro to enable threads and retries
+
+[32m2025-06-20 01:21:12 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:20AM  Sling Replication [14 streams] | LOCAL -> MySQL_conn
+
+[32m2025-06-20 01:21:12 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 
+
+[32m2025-06-20 01:21:12 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:20AM  [1 / 14] running stream file:////Users/opeyemifaronbi/Desktop/dagstar/f1db_csv/circuits.csv
+
+[32m2025-06-20 01:21:12 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:20AM  connecting to target database (mysql)
+
+[32m2025-06-20 01:21:12 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:20AM  reading from source file system (file)
+
+[32m2025-06-20 01:21:12 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:20AM  writing to target database [mode: full-refresh]
+
+[32m2025-06-20 01:21:12 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:20AM  created table `f1_raw`.`circuits_tmp`
+
+[32m2025-06-20 01:21:12 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:20AM  streaming data
+
+[32m2025-06-20 01:21:12 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:20AM  created table `f1_raw`.`circuits`
+
+[32m2025-06-20 01:21:12 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:20AM  inserted 77 rows into `f1_raw`.`circuits` in 0 secs [379 r/s]
+
+[32m2025-06-20 01:21:12 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:20AM  execution succeeded
+
+[32m2025-06-20 01:21:12 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 
+
+[32m2025-06-20 01:21:12 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:20AM  [2 / 14] running stream file:////Users/opeyemifaronbi/Desktop/dagstar/f1db_csv/status.csv
+
+[32m2025-06-20 01:21:12 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:20AM  connecting to target database (mysql)
+
+[32m2025-06-20 01:21:12 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:20AM  reading from source file system (file)
+
+[32m2025-06-20 01:21:12 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:20AM  writing to target database [mode: full-refresh]
+
+[32m2025-06-20 01:21:12 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:20AM  created table `f1_raw`.`status_tmp`
+
+[32m2025-06-20 01:21:12 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:20AM  streaming data
+
+[32m2025-06-20 01:21:12 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:20AM  created table `f1_raw`.`status`
+
+[32m2025-06-20 01:21:12 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:20AM  inserted 139 rows into `f1_raw`.`status` in 0 secs [1,237 r/s]
+
+[32m2025-06-20 01:21:12 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:20AM  execution succeeded
+
+[32m2025-06-20 01:21:12 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 
+
+[32m2025-06-20 01:21:12 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:20AM  [3 / 14] running stream file:////Users/opeyemifaronbi/Desktop/dagstar/f1db_csv/lap_times.csv
+
+[32m2025-06-20 01:21:12 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:20AM  connecting to target database (mysql)
+
+[32m2025-06-20 01:21:12 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:20AM  reading from source file system (file)
+
+[32m2025-06-20 01:21:12 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:20AM  writing to target database [mode: full-refresh]
+
+[32m2025-06-20 01:21:12 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:20AM  created table `f1_raw`.`lap_times_tmp`
+
+[32m2025-06-20 01:21:12 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:20AM  streaming data
+
+[32m2025-06-20 01:21:12 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:20AM  created table `f1_raw`.`lap_times`
+
+[32m2025-06-20 01:21:12 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:20AM  inserted 589081 rows into `f1_raw`.`lap_times` in 41 secs [14,239 r/s]
+
+[32m2025-06-20 01:21:12 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:20AM  execution succeeded
+
+[32m2025-06-20 01:21:12 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 
+
+[32m2025-06-20 01:21:12 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:20AM  [4 / 14] running stream file:////Users/opeyemifaronbi/Desktop/dagstar/f1db_csv/sprint_results.csv
+
+[32m2025-06-20 01:21:12 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:20AM  connecting to target database (mysql)
+
+[32m2025-06-20 01:21:12 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:20AM  reading from source file system (file)
+
+[32m2025-06-20 01:21:12 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:20AM  writing to target database [mode: full-refresh]
+
+[32m2025-06-20 01:21:12 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:20AM  created table `f1_raw`.`sprint_results_tmp`
+
+[32m2025-06-20 01:21:12 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:20AM  streaming data
+
+[32m2025-06-20 01:21:12 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:20AM  created table `f1_raw`.`sprint_results`
+
+[32m2025-06-20 01:21:12 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:20AM  inserted 360 rows into `f1_raw`.`sprint_results` in 0 secs [2,390 r/s]
+
+[32m2025-06-20 01:21:12 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:20AM  execution succeeded
+
+[32m2025-06-20 01:21:12 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 
+
+[32m2025-06-20 01:21:12 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:20AM  [5 / 14] running stream file:////Users/opeyemifaronbi/Desktop/dagstar/f1db_csv/drivers.csv
+
+[32m2025-06-20 01:21:12 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:20AM  connecting to target database (mysql)
+
+[32m2025-06-20 01:21:12 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:20AM  reading from source file system (file)
+
+[32m2025-06-20 01:21:12 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:20AM  writing to target database [mode: full-refresh]
+
+[32m2025-06-20 01:21:12 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:20AM  created table `f1_raw`.`drivers_tmp`
+
+[32m2025-06-20 01:21:12 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:20AM  streaming data
+
+[32m2025-06-20 01:21:12 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:20AM  created table `f1_raw`.`drivers`
+
+[32m2025-06-20 01:21:12 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:20AM  inserted 861 rows into `f1_raw`.`drivers` in 0 secs [5,026 r/s]
+
+[32m2025-06-20 01:21:12 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:20AM  execution succeeded
+
+[32m2025-06-20 01:21:12 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 
+
+[32m2025-06-20 01:21:12 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:20AM  [6 / 14] running stream file:////Users/opeyemifaronbi/Desktop/dagstar/f1db_csv/races.csv
+
+[32m2025-06-20 01:21:12 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:20AM  connecting to target database (mysql)
+
+[32m2025-06-20 01:21:12 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:20AM  reading from source file system (file)
+
+[32m2025-06-20 01:21:12 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:20AM  writing to target database [mode: full-refresh]
+
+[32m2025-06-20 01:21:12 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:20AM  created table `f1_raw`.`races_tmp`
+
+[32m2025-06-20 01:21:12 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:20AM  streaming data
+
+[32m2025-06-20 01:21:12 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:20AM  created table `f1_raw`.`races`
+
+[32m2025-06-20 01:21:12 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:20AM  inserted 1125 rows into `f1_raw`.`races` in 0 secs [4,040 r/s]
+
+[32m2025-06-20 01:21:12 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:20AM  execution succeeded
+
+[32m2025-06-20 01:21:12 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 
+
+[32m2025-06-20 01:21:12 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:20AM  [7 / 14] running stream file:////Users/opeyemifaronbi/Desktop/dagstar/f1db_csv/constructors.csv
+
+[32m2025-06-20 01:21:12 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:20AM  connecting to target database (mysql)
+
+[32m2025-06-20 01:21:12 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:20AM  reading from source file system (file)
+
+[32m2025-06-20 01:21:12 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:20AM  writing to target database [mode: full-refresh]
+
+[32m2025-06-20 01:21:12 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:20AM  created table `f1_raw`.`constructors_tmp`
+
+[32m2025-06-20 01:21:12 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:20AM  streaming data
+
+[32m2025-06-20 01:21:12 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:20AM  created table `f1_raw`.`constructors`
+
+[32m2025-06-20 01:21:12 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:20AM  inserted 212 rows into `f1_raw`.`constructors` in 0 secs [1,973 r/s]
+
+[32m2025-06-20 01:21:12 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:20AM  execution succeeded
+
+[32m2025-06-20 01:21:12 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 
+
+[32m2025-06-20 01:21:12 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:20AM  [8 / 14] running stream file:////Users/opeyemifaronbi/Desktop/dagstar/f1db_csv/constructor_standings.csv
+
+[32m2025-06-20 01:21:12 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:20AM  connecting to target database (mysql)
+
+[32m2025-06-20 01:21:12 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:20AM  reading from source file system (file)
+
+[32m2025-06-20 01:21:12 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:20AM  writing to target database [mode: full-refresh]
+
+[32m2025-06-20 01:21:12 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:20AM  created table `f1_raw`.`constructor_standings_tmp`
+
+[32m2025-06-20 01:21:12 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:20AM  streaming data
+
+[32m2025-06-20 01:21:12 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:21AM  created table `f1_raw`.`constructor_standings`
+
+[32m2025-06-20 01:21:12 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:21AM  inserted 13391 rows into `f1_raw`.`constructor_standings` in 1 secs [9,245 r/s]
+
+[32m2025-06-20 01:21:12 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:21AM  execution succeeded
+
+[32m2025-06-20 01:21:12 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 
+
+[32m2025-06-20 01:21:12 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:21AM  [9 / 14] running stream file:////Users/opeyemifaronbi/Desktop/dagstar/f1db_csv/qualifying.csv
+
+[32m2025-06-20 01:21:12 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:21AM  connecting to target database (mysql)
+
+[32m2025-06-20 01:21:12 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:21AM  reading from source file system (file)
+
+[32m2025-06-20 01:21:12 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:21AM  writing to target database [mode: full-refresh]
+
+[32m2025-06-20 01:21:12 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:21AM  created table `f1_raw`.`qualifying_tmp`
+
+[32m2025-06-20 01:21:12 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:21AM  streaming data
+
+[32m2025-06-20 01:21:12 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:21AM  created table `f1_raw`.`qualifying`
+
+[32m2025-06-20 01:21:12 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:21AM  inserted 10494 rows into `f1_raw`.`qualifying` in 1 secs [6,155 r/s]
+
+[32m2025-06-20 01:21:12 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:21AM  execution succeeded
+
+[32m2025-06-20 01:21:12 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 
+
+[32m2025-06-20 01:21:12 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:21AM  [10 / 14] running stream file:////Users/opeyemifaronbi/Desktop/dagstar/f1db_csv/driver_standings.csv
+
+[32m2025-06-20 01:21:12 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:21AM  connecting to target database (mysql)
+
+[32m2025-06-20 01:21:12 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:21AM  reading from source file system (file)
+
+[32m2025-06-20 01:21:12 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:21AM  writing to target database [mode: full-refresh]
+
+[32m2025-06-20 01:21:12 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:21AM  created table `f1_raw`.`driver_standings_tmp`
+
+[32m2025-06-20 01:21:12 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:21AM  streaming data
+
+[32m2025-06-20 01:21:12 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:21AM  created table `f1_raw`.`driver_standings`
+
+[32m2025-06-20 01:21:12 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:21AM  inserted 34863 rows into `f1_raw`.`driver_standings` in 3 secs [10,626 r/s]
+
+[32m2025-06-20 01:21:12 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:21AM  execution succeeded
+
+[32m2025-06-20 01:21:12 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 
+
+[32m2025-06-20 01:21:12 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:21AM  [11 / 14] running stream file:////Users/opeyemifaronbi/Desktop/dagstar/f1db_csv/constructor_results.csv
+
+[32m2025-06-20 01:21:12 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:21AM  connecting to target database (mysql)
+
+[32m2025-06-20 01:21:12 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:21AM  reading from source file system (file)
+
+[32m2025-06-20 01:21:12 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:21AM  writing to target database [mode: full-refresh]
+
+[32m2025-06-20 01:21:12 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:21AM  created table `f1_raw`.`constructor_results_tmp`
+
+[32m2025-06-20 01:21:12 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:21AM  streaming data
+
+[32m2025-06-20 01:21:12 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:21AM  created table `f1_raw`.`constructor_results`
+
+[32m2025-06-20 01:21:12 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:21AM  inserted 12625 rows into `f1_raw`.`constructor_results` in 0 secs [12,945 r/s]
+
+[32m2025-06-20 01:21:12 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:21AM  execution succeeded
+
+[32m2025-06-20 01:21:13 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 
+
+[32m2025-06-20 01:21:13 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:21AM  [12 / 14] running stream file:////Users/opeyemifaronbi/Desktop/dagstar/f1db_csv/pit_stops.csv
+
+[32m2025-06-20 01:21:13 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:21AM  connecting to target database (mysql)
+
+[32m2025-06-20 01:21:13 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:21AM  reading from source file system (file)
+
+[32m2025-06-20 01:21:13 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:21AM  writing to target database [mode: full-refresh]
+
+[32m2025-06-20 01:21:13 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:21AM  created table `f1_raw`.`pit_stops_tmp`
+
+[32m2025-06-20 01:21:13 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:21AM  streaming data
+
+[32m2025-06-20 01:21:13 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:21AM  created table `f1_raw`.`pit_stops`
+
+[32m2025-06-20 01:21:13 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:21AM  inserted 11371 rows into `f1_raw`.`pit_stops` in 0 secs [11,910 r/s]
+
+[32m2025-06-20 01:21:13 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:21AM  execution succeeded
+
+[32m2025-06-20 01:21:13 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 
+
+[32m2025-06-20 01:21:13 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:21AM  [13 / 14] running stream file:////Users/opeyemifaronbi/Desktop/dagstar/f1db_csv/seasons.csv
+
+[32m2025-06-20 01:21:13 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:21AM  connecting to target database (mysql)
+
+[32m2025-06-20 01:21:13 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:21AM  reading from source file system (file)
+
+[32m2025-06-20 01:21:13 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:21AM  writing to target database [mode: full-refresh]
+
+[32m2025-06-20 01:21:13 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:21AM  created table `f1_raw`.`seasons_tmp`
+
+[32m2025-06-20 01:21:13 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:21AM  streaming data
+
+[32m2025-06-20 01:21:13 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:21AM  created table `f1_raw`.`seasons`
+
+[32m2025-06-20 01:21:13 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:21AM  inserted 75 rows into `f1_raw`.`seasons` in 0 secs [845 r/s]
+
+[32m2025-06-20 01:21:13 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:21AM  execution succeeded
+
+[32m2025-06-20 01:21:13 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 
+
+[32m2025-06-20 01:21:13 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:21AM  [14 / 14] running stream file:////Users/opeyemifaronbi/Desktop/dagstar/f1db_csv/results.csv
+
+[32m2025-06-20 01:21:13 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:21AM  connecting to target database (mysql)
+
+[32m2025-06-20 01:21:13 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:21AM  reading from source file system (file)
+
+[32m2025-06-20 01:21:13 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:21AM  writing to target database [mode: full-refresh]
+
+[32m2025-06-20 01:21:13 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:21AM  created table `f1_raw`.`results_tmp`
+
+[32m2025-06-20 01:21:13 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:21AM  streaming data
+
+[32m2025-06-20 01:21:13 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:21AM  created table `f1_raw`.`results`
+
+[32m2025-06-20 01:21:13 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:21AM  inserted 26759 rows into `f1_raw`.`results` in 3 secs [7,068 r/s]
+
+[32m2025-06-20 01:21:13 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:21AM  execution succeeded
+
+[32m2025-06-20 01:21:13 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 
+
+[32m2025-06-20 01:21:13 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:21AM  Sling Replication Completed in 56s | LOCAL -> MySQL_conn | 14 Successes | 0 Failures
+
+[32m2025-06-20 01:21:13 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 
+
+[32m2025-06-20 01:21:13 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 
+
+[32m2025-06-20 01:21:13 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - 56308 - sling_asset - STEP_OUTPUT - Yielded output "Formula1_Dataset__circuits" of type "Nothing". (Type check passed).
+[32m2025-06-20 01:21:13 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - 56308 - sling_asset - ASSET_MATERIALIZATION - Materialized value Formula1_Dataset circuits.
+[32m2025-06-20 01:21:13 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - 56308 - sling_asset - STEP_OUTPUT - Yielded output "Formula1_Dataset__status" of type "Nothing". (Type check passed).
+[32m2025-06-20 01:21:13 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - 56308 - sling_asset - ASSET_MATERIALIZATION - Materialized value Formula1_Dataset status.
+[32m2025-06-20 01:21:13 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - 56308 - sling_asset - STEP_OUTPUT - Yielded output "Formula1_Dataset__lap_times" of type "Nothing". (Type check passed).
+[32m2025-06-20 01:21:13 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - 56308 - sling_asset - ASSET_MATERIALIZATION - Materialized value Formula1_Dataset lap_times.
+[32m2025-06-20 01:21:13 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - 56308 - sling_asset - STEP_OUTPUT - Yielded output "Formula1_Dataset__sprint_results" of type "Nothing". (Type check passed).
+[32m2025-06-20 01:21:13 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - 56308 - sling_asset - ASSET_MATERIALIZATION - Materialized value Formula1_Dataset sprint_results.
+[32m2025-06-20 01:21:13 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - 56308 - sling_asset - STEP_OUTPUT - Yielded output "Formula1_Dataset__drivers" of type "Nothing". (Type check passed).
+[32m2025-06-20 01:21:13 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - 56308 - sling_asset - ASSET_MATERIALIZATION - Materialized value Formula1_Dataset drivers.
+[32m2025-06-20 01:21:13 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - 56308 - sling_asset - STEP_OUTPUT - Yielded output "Formula1_Dataset__races" of type "Nothing". (Type check passed).
+[32m2025-06-20 01:21:13 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - 56308 - sling_asset - ASSET_MATERIALIZATION - Materialized value Formula1_Dataset races.
+[32m2025-06-20 01:21:13 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - 56308 - sling_asset - STEP_OUTPUT - Yielded output "Formula1_Dataset__constructors" of type "Nothing". (Type check passed).
+[32m2025-06-20 01:21:13 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - 56308 - sling_asset - ASSET_MATERIALIZATION - Materialized value Formula1_Dataset constructors.
+[32m2025-06-20 01:21:13 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - 56308 - sling_asset - STEP_OUTPUT - Yielded output "Formula1_Dataset__constructor_standings" of type "Nothing". (Type check passed).
+[32m2025-06-20 01:21:13 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - 56308 - sling_asset - ASSET_MATERIALIZATION - Materialized value Formula1_Dataset constructor_standings.
+[32m2025-06-20 01:21:13 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - 56308 - sling_asset - STEP_OUTPUT - Yielded output "Formula1_Dataset__qualifying" of type "Nothing". (Type check passed).
+[32m2025-06-20 01:21:13 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - 56308 - sling_asset - ASSET_MATERIALIZATION - Materialized value Formula1_Dataset qualifying.
+[32m2025-06-20 01:21:13 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - 56308 - sling_asset - STEP_OUTPUT - Yielded output "Formula1_Dataset__driver_standings" of type "Nothing". (Type check passed).
+[32m2025-06-20 01:21:13 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - 56308 - sling_asset - ASSET_MATERIALIZATION - Materialized value Formula1_Dataset driver_standings.
+[32m2025-06-20 01:21:13 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - 56308 - sling_asset - STEP_OUTPUT - Yielded output "Formula1_Dataset__constructor_results" of type "Nothing". (Type check passed).
+[32m2025-06-20 01:21:13 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - 56308 - sling_asset - ASSET_MATERIALIZATION - Materialized value Formula1_Dataset constructor_results.
+[32m2025-06-20 01:21:13 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - 56308 - sling_asset - STEP_OUTPUT - Yielded output "Formula1_Dataset__pit_stops" of type "Nothing". (Type check passed).
+[32m2025-06-20 01:21:13 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - 56308 - sling_asset - ASSET_MATERIALIZATION - Materialized value Formula1_Dataset pit_stops.
+[32m2025-06-20 01:21:13 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - 56308 - sling_asset - STEP_OUTPUT - Yielded output "Formula1_Dataset__seasons" of type "Nothing". (Type check passed).
+[32m2025-06-20 01:21:13 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - 56308 - sling_asset - ASSET_MATERIALIZATION - Materialized value Formula1_Dataset seasons.
+[32m2025-06-20 01:21:13 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - 56308 - sling_asset - STEP_OUTPUT - Yielded output "Formula1_Dataset__results" of type "Nothing". (Type check passed).
+[32m2025-06-20 01:21:13 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - 56308 - sling_asset - ASSET_MATERIALIZATION - Materialized value Formula1_Dataset results.
+[32m2025-06-20 01:21:13 -0400[0m - dagster - [34mINFO[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:20AM  Sling CLI | https://slingdata.io
+[32m2025-06-20 01:21:13 -0400[0m - dagster - [34mINFO[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:20AM WRN invalid or missing token. Please see https://docs.slingdata.io/sling-cli/cli-pro to enable threads and retries
+[32m2025-06-20 01:21:13 -0400[0m - dagster - [34mINFO[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:20AM  Sling Replication [14 streams] | LOCAL -> MySQL_conn
+[32m2025-06-20 01:21:13 -0400[0m - dagster - [34mINFO[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset
+[32m2025-06-20 01:21:13 -0400[0m - dagster - [34mINFO[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:20AM  [1 / 14] running stream file:////Users/opeyemifaronbi/Desktop/dagstar/f1db_csv/circuits.csv
+[32m2025-06-20 01:21:13 -0400[0m - dagster - [34mINFO[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:20AM  connecting to target database (mysql)
+[32m2025-06-20 01:21:13 -0400[0m - dagster - [34mINFO[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:20AM  reading from source file system (file)
+[32m2025-06-20 01:21:13 -0400[0m - dagster - [34mINFO[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:20AM  writing to target database [mode: full-refresh]
+[32m2025-06-20 01:21:13 -0400[0m - dagster - [34mINFO[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:20AM  created table `f1_raw`.`circuits_tmp`
+[32m2025-06-20 01:21:13 -0400[0m - dagster - [34mINFO[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:20AM  streaming data
+[32m2025-06-20 01:21:13 -0400[0m - dagster - [34mINFO[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:20AM  created table `f1_raw`.`circuits`
+[32m2025-06-20 01:21:13 -0400[0m - dagster - [34mINFO[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:20AM  inserted 77 rows into `f1_raw`.`circuits` in 0 secs [379 r/s]
+[32m2025-06-20 01:21:13 -0400[0m - dagster - [34mINFO[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:20AM  execution succeeded
+[32m2025-06-20 01:21:13 -0400[0m - dagster - [34mINFO[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset
+[32m2025-06-20 01:21:13 -0400[0m - dagster - [34mINFO[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:20AM  [2 / 14] running stream file:////Users/opeyemifaronbi/Desktop/dagstar/f1db_csv/status.csv
+[32m2025-06-20 01:21:13 -0400[0m - dagster - [34mINFO[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:20AM  connecting to target database (mysql)
+[32m2025-06-20 01:21:13 -0400[0m - dagster - [34mINFO[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:20AM  reading from source file system (file)
+[32m2025-06-20 01:21:13 -0400[0m - dagster - [34mINFO[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:20AM  writing to target database [mode: full-refresh]
+[32m2025-06-20 01:21:13 -0400[0m - dagster - [34mINFO[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:20AM  created table `f1_raw`.`status_tmp`
+[32m2025-06-20 01:21:13 -0400[0m - dagster - [34mINFO[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:20AM  streaming data
+[32m2025-06-20 01:21:13 -0400[0m - dagster - [34mINFO[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:20AM  created table `f1_raw`.`status`
+[32m2025-06-20 01:21:13 -0400[0m - dagster - [34mINFO[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:20AM  inserted 139 rows into `f1_raw`.`status` in 0 secs [1,237 r/s]
+[32m2025-06-20 01:21:13 -0400[0m - dagster - [34mINFO[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:20AM  execution succeeded
+[32m2025-06-20 01:21:13 -0400[0m - dagster - [34mINFO[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset
+[32m2025-06-20 01:21:13 -0400[0m - dagster - [34mINFO[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:20AM  [3 / 14] running stream file:////Users/opeyemifaronbi/Desktop/dagstar/f1db_csv/lap_times.csv
+[32m2025-06-20 01:21:13 -0400[0m - dagster - [34mINFO[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:20AM  connecting to target database (mysql)
+[32m2025-06-20 01:21:13 -0400[0m - dagster - [34mINFO[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:20AM  reading from source file system (file)
+[32m2025-06-20 01:21:13 -0400[0m - dagster - [34mINFO[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:20AM  writing to target database [mode: full-refresh]
+[32m2025-06-20 01:21:13 -0400[0m - dagster - [34mINFO[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:20AM  created table `f1_raw`.`lap_times_tmp`
+[32m2025-06-20 01:21:13 -0400[0m - dagster - [34mINFO[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:20AM  streaming data
+[32m2025-06-20 01:21:13 -0400[0m - dagster - [34mINFO[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:20AM  created table `f1_raw`.`lap_times`
+[32m2025-06-20 01:21:13 -0400[0m - dagster - [34mINFO[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:20AM  inserted 589081 rows into `f1_raw`.`lap_times` in 41 secs [14,239 r/s]
+[32m2025-06-20 01:21:13 -0400[0m - dagster - [34mINFO[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:20AM  execution succeeded
+[32m2025-06-20 01:21:13 -0400[0m - dagster - [34mINFO[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset
+[32m2025-06-20 01:21:13 -0400[0m - dagster - [34mINFO[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:20AM  [4 / 14] running stream file:////Users/opeyemifaronbi/Desktop/dagstar/f1db_csv/sprint_results.csv
+[32m2025-06-20 01:21:13 -0400[0m - dagster - [34mINFO[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:20AM  connecting to target database (mysql)
+[32m2025-06-20 01:21:13 -0400[0m - dagster - [34mINFO[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:20AM  reading from source file system (file)
+[32m2025-06-20 01:21:13 -0400[0m - dagster - [34mINFO[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:20AM  writing to target database [mode: full-refresh]
+[32m2025-06-20 01:21:13 -0400[0m - dagster - [34mINFO[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:20AM  created table `f1_raw`.`sprint_results_tmp`
+[32m2025-06-20 01:21:13 -0400[0m - dagster - [34mINFO[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:20AM  streaming data
+[32m2025-06-20 01:21:13 -0400[0m - dagster - [34mINFO[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:20AM  created table `f1_raw`.`sprint_results`
+[32m2025-06-20 01:21:13 -0400[0m - dagster - [34mINFO[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:20AM  inserted 360 rows into `f1_raw`.`sprint_results` in 0 secs [2,390 r/s]
+[32m2025-06-20 01:21:13 -0400[0m - dagster - [34mINFO[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:20AM  execution succeeded
+[32m2025-06-20 01:21:13 -0400[0m - dagster - [34mINFO[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset
+[32m2025-06-20 01:21:13 -0400[0m - dagster - [34mINFO[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:20AM  [5 / 14] running stream file:////Users/opeyemifaronbi/Desktop/dagstar/f1db_csv/drivers.csv
+[32m2025-06-20 01:21:13 -0400[0m - dagster - [34mINFO[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:20AM  connecting to target database (mysql)
+[32m2025-06-20 01:21:13 -0400[0m - dagster - [34mINFO[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:20AM  reading from source file system (file)
+[32m2025-06-20 01:21:13 -0400[0m - dagster - [34mINFO[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:20AM  writing to target database [mode: full-refresh]
+[32m2025-06-20 01:21:13 -0400[0m - dagster - [34mINFO[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:20AM  created table `f1_raw`.`drivers_tmp`
+[32m2025-06-20 01:21:13 -0400[0m - dagster - [34mINFO[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:20AM  streaming data
+[32m2025-06-20 01:21:13 -0400[0m - dagster - [34mINFO[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:20AM  created table `f1_raw`.`drivers`
+[32m2025-06-20 01:21:13 -0400[0m - dagster - [34mINFO[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:20AM  inserted 861 rows into `f1_raw`.`drivers` in 0 secs [5,026 r/s]
+[32m2025-06-20 01:21:13 -0400[0m - dagster - [34mINFO[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:20AM  execution succeeded
+[32m2025-06-20 01:21:13 -0400[0m - dagster - [34mINFO[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset
+[32m2025-06-20 01:21:13 -0400[0m - dagster - [34mINFO[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:20AM  [6 / 14] running stream file:////Users/opeyemifaronbi/Desktop/dagstar/f1db_csv/races.csv
+[32m2025-06-20 01:21:13 -0400[0m - dagster - [34mINFO[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:20AM  connecting to target database (mysql)
+[32m2025-06-20 01:21:13 -0400[0m - dagster - [34mINFO[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:20AM  reading from source file system (file)
+[32m2025-06-20 01:21:13 -0400[0m - dagster - [34mINFO[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:20AM  writing to target database [mode: full-refresh]
+[32m2025-06-20 01:21:13 -0400[0m - dagster - [34mINFO[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:20AM  created table `f1_raw`.`races_tmp`
+[32m2025-06-20 01:21:14 -0400[0m - dagster - [34mINFO[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:20AM  streaming data
+[32m2025-06-20 01:21:14 -0400[0m - dagster - [34mINFO[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:20AM  created table `f1_raw`.`races`
+[32m2025-06-20 01:21:14 -0400[0m - dagster - [34mINFO[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:20AM  inserted 1125 rows into `f1_raw`.`races` in 0 secs [4,040 r/s]
+[32m2025-06-20 01:21:14 -0400[0m - dagster - [34mINFO[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:20AM  execution succeeded
+[32m2025-06-20 01:21:14 -0400[0m - dagster - [34mINFO[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset
+[32m2025-06-20 01:21:14 -0400[0m - dagster - [34mINFO[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:20AM  [7 / 14] running stream file:////Users/opeyemifaronbi/Desktop/dagstar/f1db_csv/constructors.csv
+[32m2025-06-20 01:21:14 -0400[0m - dagster - [34mINFO[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:20AM  connecting to target database (mysql)
+[32m2025-06-20 01:21:14 -0400[0m - dagster - [34mINFO[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:20AM  reading from source file system (file)
+[32m2025-06-20 01:21:14 -0400[0m - dagster - [34mINFO[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:20AM  writing to target database [mode: full-refresh]
+[32m2025-06-20 01:21:14 -0400[0m - dagster - [34mINFO[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:20AM  created table `f1_raw`.`constructors_tmp`
+[32m2025-06-20 01:21:14 -0400[0m - dagster - [34mINFO[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:20AM  streaming data
+[32m2025-06-20 01:21:14 -0400[0m - dagster - [34mINFO[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:20AM  created table `f1_raw`.`constructors`
+[32m2025-06-20 01:21:14 -0400[0m - dagster - [34mINFO[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:20AM  inserted 212 rows into `f1_raw`.`constructors` in 0 secs [1,973 r/s]
+[32m2025-06-20 01:21:14 -0400[0m - dagster - [34mINFO[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:20AM  execution succeeded
+[32m2025-06-20 01:21:14 -0400[0m - dagster - [34mINFO[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset
+[32m2025-06-20 01:21:14 -0400[0m - dagster - [34mINFO[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:20AM  [8 / 14] running stream file:////Users/opeyemifaronbi/Desktop/dagstar/f1db_csv/constructor_standings.csv
+[32m2025-06-20 01:21:14 -0400[0m - dagster - [34mINFO[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:20AM  connecting to target database (mysql)
+[32m2025-06-20 01:21:14 -0400[0m - dagster - [34mINFO[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:20AM  reading from source file system (file)
+[32m2025-06-20 01:21:14 -0400[0m - dagster - [34mINFO[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:20AM  writing to target database [mode: full-refresh]
+[32m2025-06-20 01:21:14 -0400[0m - dagster - [34mINFO[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:20AM  created table `f1_raw`.`constructor_standings_tmp`
+[32m2025-06-20 01:21:14 -0400[0m - dagster - [34mINFO[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:20AM  streaming data
+[32m2025-06-20 01:21:14 -0400[0m - dagster - [34mINFO[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:21AM  created table `f1_raw`.`constructor_standings`
+[32m2025-06-20 01:21:14 -0400[0m - dagster - [34mINFO[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:21AM  inserted 13391 rows into `f1_raw`.`constructor_standings` in 1 secs [9,245 r/s]
+[32m2025-06-20 01:21:14 -0400[0m - dagster - [34mINFO[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:21AM  execution succeeded
+[32m2025-06-20 01:21:14 -0400[0m - dagster - [34mINFO[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset
+[32m2025-06-20 01:21:14 -0400[0m - dagster - [34mINFO[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:21AM  [9 / 14] running stream file:////Users/opeyemifaronbi/Desktop/dagstar/f1db_csv/qualifying.csv
+[32m2025-06-20 01:21:14 -0400[0m - dagster - [34mINFO[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:21AM  connecting to target database (mysql)
+[32m2025-06-20 01:21:14 -0400[0m - dagster - [34mINFO[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:21AM  reading from source file system (file)
+[32m2025-06-20 01:21:14 -0400[0m - dagster - [34mINFO[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:21AM  writing to target database [mode: full-refresh]
+[32m2025-06-20 01:21:14 -0400[0m - dagster - [34mINFO[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:21AM  created table `f1_raw`.`qualifying_tmp`
+[32m2025-06-20 01:21:14 -0400[0m - dagster - [34mINFO[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:21AM  streaming data
+[32m2025-06-20 01:21:14 -0400[0m - dagster - [34mINFO[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:21AM  created table `f1_raw`.`qualifying`
+[32m2025-06-20 01:21:14 -0400[0m - dagster - [34mINFO[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:21AM  inserted 10494 rows into `f1_raw`.`qualifying` in 1 secs [6,155 r/s]
+[32m2025-06-20 01:21:14 -0400[0m - dagster - [34mINFO[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:21AM  execution succeeded
+[32m2025-06-20 01:21:14 -0400[0m - dagster - [34mINFO[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset
+[32m2025-06-20 01:21:14 -0400[0m - dagster - [34mINFO[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:21AM  [10 / 14] running stream file:////Users/opeyemifaronbi/Desktop/dagstar/f1db_csv/driver_standings.csv
+[32m2025-06-20 01:21:14 -0400[0m - dagster - [34mINFO[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:21AM  connecting to target database (mysql)
+[32m2025-06-20 01:21:14 -0400[0m - dagster - [34mINFO[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:21AM  reading from source file system (file)
+[32m2025-06-20 01:21:14 -0400[0m - dagster - [34mINFO[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:21AM  writing to target database [mode: full-refresh]
+[32m2025-06-20 01:21:14 -0400[0m - dagster - [34mINFO[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:21AM  created table `f1_raw`.`driver_standings_tmp`
+[32m2025-06-20 01:21:14 -0400[0m - dagster - [34mINFO[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:21AM  streaming data
+[32m2025-06-20 01:21:14 -0400[0m - dagster - [34mINFO[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:21AM  created table `f1_raw`.`driver_standings`
+[32m2025-06-20 01:21:14 -0400[0m - dagster - [34mINFO[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:21AM  inserted 34863 rows into `f1_raw`.`driver_standings` in 3 secs [10,626 r/s]
+[32m2025-06-20 01:21:14 -0400[0m - dagster - [34mINFO[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:21AM  execution succeeded
+[32m2025-06-20 01:21:14 -0400[0m - dagster - [34mINFO[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset
+[32m2025-06-20 01:21:14 -0400[0m - dagster - [34mINFO[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:21AM  [11 / 14] running stream file:////Users/opeyemifaronbi/Desktop/dagstar/f1db_csv/constructor_results.csv
+[32m2025-06-20 01:21:14 -0400[0m - dagster - [34mINFO[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:21AM  connecting to target database (mysql)
+[32m2025-06-20 01:21:14 -0400[0m - dagster - [34mINFO[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:21AM  reading from source file system (file)
+[32m2025-06-20 01:21:14 -0400[0m - dagster - [34mINFO[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:21AM  writing to target database [mode: full-refresh]
+[32m2025-06-20 01:21:14 -0400[0m - dagster - [34mINFO[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:21AM  created table `f1_raw`.`constructor_results_tmp`
+[32m2025-06-20 01:21:14 -0400[0m - dagster - [34mINFO[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:21AM  streaming data
+[32m2025-06-20 01:21:14 -0400[0m - dagster - [34mINFO[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:21AM  created table `f1_raw`.`constructor_results`
+[32m2025-06-20 01:21:14 -0400[0m - dagster - [34mINFO[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:21AM  inserted 12625 rows into `f1_raw`.`constructor_results` in 0 secs [12,945 r/s]
+[32m2025-06-20 01:21:14 -0400[0m - dagster - [34mINFO[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:21AM  execution succeeded
+[32m2025-06-20 01:21:14 -0400[0m - dagster - [34mINFO[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset
+[32m2025-06-20 01:21:14 -0400[0m - dagster - [34mINFO[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:21AM  [12 / 14] running stream file:////Users/opeyemifaronbi/Desktop/dagstar/f1db_csv/pit_stops.csv
+[32m2025-06-20 01:21:14 -0400[0m - dagster - [34mINFO[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:21AM  connecting to target database (mysql)
+[32m2025-06-20 01:21:14 -0400[0m - dagster - [34mINFO[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:21AM  reading from source file system (file)
+[32m2025-06-20 01:21:14 -0400[0m - dagster - [34mINFO[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:21AM  writing to target database [mode: full-refresh]
+[32m2025-06-20 01:21:14 -0400[0m - dagster - [34mINFO[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:21AM  created table `f1_raw`.`pit_stops_tmp`
+[32m2025-06-20 01:21:14 -0400[0m - dagster - [34mINFO[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:21AM  streaming data
+[32m2025-06-20 01:21:14 -0400[0m - dagster - [34mINFO[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:21AM  created table `f1_raw`.`pit_stops`
+[32m2025-06-20 01:21:14 -0400[0m - dagster - [34mINFO[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:21AM  inserted 11371 rows into `f1_raw`.`pit_stops` in 0 secs [11,910 r/s]
+[32m2025-06-20 01:21:14 -0400[0m - dagster - [34mINFO[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:21AM  execution succeeded
+[32m2025-06-20 01:21:14 -0400[0m - dagster - [34mINFO[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset
+[32m2025-06-20 01:21:14 -0400[0m - dagster - [34mINFO[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:21AM  [13 / 14] running stream file:////Users/opeyemifaronbi/Desktop/dagstar/f1db_csv/seasons.csv
+[32m2025-06-20 01:21:14 -0400[0m - dagster - [34mINFO[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:21AM  connecting to target database (mysql)
+[32m2025-06-20 01:21:14 -0400[0m - dagster - [34mINFO[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:21AM  reading from source file system (file)
+[32m2025-06-20 01:21:14 -0400[0m - dagster - [34mINFO[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:21AM  writing to target database [mode: full-refresh]
+[32m2025-06-20 01:21:14 -0400[0m - dagster - [34mINFO[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:21AM  created table `f1_raw`.`seasons_tmp`
+[32m2025-06-20 01:21:14 -0400[0m - dagster - [34mINFO[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:21AM  streaming data
+[32m2025-06-20 01:21:14 -0400[0m - dagster - [34mINFO[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:21AM  created table `f1_raw`.`seasons`
+[32m2025-06-20 01:21:14 -0400[0m - dagster - [34mINFO[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:21AM  inserted 75 rows into `f1_raw`.`seasons` in 0 secs [845 r/s]
+[32m2025-06-20 01:21:14 -0400[0m - dagster - [34mINFO[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:21AM  execution succeeded
+[32m2025-06-20 01:21:14 -0400[0m - dagster - [34mINFO[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset
+[32m2025-06-20 01:21:14 -0400[0m - dagster - [34mINFO[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:21AM  [14 / 14] running stream file:////Users/opeyemifaronbi/Desktop/dagstar/f1db_csv/results.csv
+[32m2025-06-20 01:21:14 -0400[0m - dagster - [34mINFO[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:21AM  connecting to target database (mysql)
+[32m2025-06-20 01:21:14 -0400[0m - dagster - [34mINFO[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:21AM  reading from source file system (file)
+[32m2025-06-20 01:21:14 -0400[0m - dagster - [34mINFO[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:21AM  writing to target database [mode: full-refresh]
+[32m2025-06-20 01:21:14 -0400[0m - dagster - [34mINFO[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:21AM  created table `f1_raw`.`results_tmp`
+[32m2025-06-20 01:21:14 -0400[0m - dagster - [34mINFO[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:21AM  streaming data
+[32m2025-06-20 01:21:14 -0400[0m - dagster - [34mINFO[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:21AM  created table `f1_raw`.`results`
+[32m2025-06-20 01:21:14 -0400[0m - dagster - [34mINFO[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:21AM  inserted 26759 rows into `f1_raw`.`results` in 3 secs [7,068 r/s]
+[32m2025-06-20 01:21:14 -0400[0m - dagster - [34mINFO[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:21AM  execution succeeded
+[32m2025-06-20 01:21:14 -0400[0m - dagster - [34mINFO[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset
+[32m2025-06-20 01:21:14 -0400[0m - dagster - [34mINFO[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset - 1:21AM  Sling Replication Completed in 56s | LOCAL -> MySQL_conn | 14 Successes | 0 Failures
+[32m2025-06-20 01:21:14 -0400[0m - dagster - [34mINFO[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset
+[32m2025-06-20 01:21:14 -0400[0m - dagster - [34mINFO[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - sling_asset
+[32m2025-06-20 01:21:14 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 71ed7245-534d-42b9-bedc-3a43f9ea7473 - 56308 - sling_asset - STEP_SUCCESS - Finished execution of step "sling_asset" in 59.23s.
