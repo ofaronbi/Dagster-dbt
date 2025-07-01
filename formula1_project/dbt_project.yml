@@ -34,3 +34,7 @@ models:
     staging:
       +schema: Dagster_dbt_staging
       +materialized: table
+    
+    core:
+      +schema: Dagster_dbt_core
+      +materialized: views
