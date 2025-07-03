@@ -37,4 +37,3 @@ models:
     
     core:
       +schema: Dagster_dbt_core
-      +materialized: views
