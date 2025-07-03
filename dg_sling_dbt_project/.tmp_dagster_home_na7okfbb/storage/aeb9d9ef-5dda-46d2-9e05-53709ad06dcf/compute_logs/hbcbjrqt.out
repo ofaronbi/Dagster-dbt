@@ -1,0 +1,121 @@
+Running with dbt=1.7.19
+Registered adapter: mysql=1.7.0
+Unable to do partial parsing because config vars, config profile, or config target have changed
+Found 30 models, 14 sources, 0 exposures, 0 metrics, 390 macros, 0 groups, 0 semantic models
+
+Concurrency: 1 threads (target='dev')
+
+1 of 30 START sql table model Dagster_dbt_staging.circuits_stg ................. [RUN]
+1 of 30 OK created sql table model Dagster_dbt_staging.circuits_stg ............ [[32mSUCCESS 77[0m in 0.54s]
+2 of 30 START sql table model Dagster_dbt_staging.constructor_results_stg ...... [RUN]
+2 of 30 OK created sql table model Dagster_dbt_staging.constructor_results_stg . [[32mSUCCESS 12625[0m in 0.37s]
+3 of 30 START sql table model Dagster_dbt_staging.constructor_standings_stg .... [RUN]
+3 of 30 OK created sql table model Dagster_dbt_staging.constructor_standings_stg  [[32mSUCCESS 13391[0m in 0.36s]
+4 of 30 START sql table model Dagster_dbt_staging.constructors_stg ............. [RUN]
+4 of 30 OK created sql table model Dagster_dbt_staging.constructors_stg ........ [[32mSUCCESS 212[0m in 0.21s]
+5 of 30 START sql table model Dagster_dbt_staging.driver_standings_stg ......... [RUN]
+5 of 30 OK created sql table model Dagster_dbt_staging.driver_standings_stg .... [[32mSUCCESS 34863[0m in 0.58s]
+6 of 30 START sql table model Dagster_dbt_staging.drivers_stg .................. [RUN]
+6 of 30 OK created sql table model Dagster_dbt_staging.drivers_stg ............. [[32mSUCCESS 861[0m in 0.18s]
+7 of 30 START sql table model Dagster_dbt_staging.lap_times_stg ................ [RUN]
+7 of 30 OK created sql table model Dagster_dbt_staging.lap_times_stg ........... [[32mSUCCESS 589081[0m in 6.72s]
+8 of 30 START sql table model Dagster_dbt_staging.pit_stops_stg ................ [RUN]
+8 of 30 OK created sql table model Dagster_dbt_staging.pit_stops_stg ........... [[32mSUCCESS 11371[0m in 0.30s]
+9 of 30 START sql table model Dagster_dbt_staging.qualifying_stg ............... [RUN]
+9 of 30 OK created sql table model Dagster_dbt_staging.qualifying_stg .......... [[32mSUCCESS 10494[0m in 0.34s]
+10 of 30 START sql table model Dagster_dbt_staging.race_stg .................... [RUN]
+10 of 30 OK created sql table model Dagster_dbt_staging.race_stg ............... [[32mSUCCESS 1125[0m in 0.17s]
+11 of 30 START sql table model Dagster_dbt_staging.results_stg ................. [RUN]
+11 of 30 OK created sql table model Dagster_dbt_staging.results_stg ............ [[32mSUCCESS 26759[0m in 0.71s]
+12 of 30 START sql table model Dagster_dbt_staging.seasons_stg ................. [RUN]
+12 of 30 OK created sql table model Dagster_dbt_staging.seasons_stg ............ [[32mSUCCESS 75[0m in 0.12s]
+13 of 30 START sql table model Dagster_dbt_staging.sprint_results_stg .......... [RUN]
+13 of 30 OK created sql table model Dagster_dbt_staging.sprint_results_stg ..... [[32mSUCCESS 360[0m in 0.13s]
+14 of 30 START sql table model Dagster_dbt_staging.status_stg .................. [RUN]
+14 of 30 OK created sql table model Dagster_dbt_staging.status_stg ............. [[32mSUCCESS 139[0m in 0.11s]
+15 of 30 START sql views model Dagster_dbt_core.lap_time_patterns .............. [RUN]
+15 of 30 ERROR creating sql views model Dagster_dbt_core.lap_time_patterns ..... [[31mERROR[0m in 0.02s]
+16 of 30 START sql views model Dagster_dbt_core.pit_stop_efficiency ............ [RUN]
+16 of 30 ERROR creating sql views model Dagster_dbt_core.pit_stop_efficiency ... [[31mERROR[0m in 0.02s]
+17 of 30 START sql views model Dagster_dbt_core.qualifying_consistency ......... [RUN]
+17 of 30 ERROR creating sql views model Dagster_dbt_core.qualifying_consistency  [[31mERROR[0m in 0.02s]
+18 of 30 START sql views model Dagster_dbt_core.constructor_insights ........... [RUN]
+18 of 30 ERROR creating sql views model Dagster_dbt_core.constructor_insights .. [[31mERROR[0m in 0.02s]
+19 of 30 START sql views model Dagster_dbt_core.race_frequency ................. [RUN]
+19 of 30 ERROR creating sql views model Dagster_dbt_core.race_frequency ........ [[31mERROR[0m in 0.02s]
+20 of 30 START sql views model Dagster_dbt_core.season_schedule ................ [RUN]
+20 of 30 ERROR creating sql views model Dagster_dbt_core.season_schedule ....... [[31mERROR[0m in 0.02s]
+21 of 30 START sql views model Dagster_dbt_core.year-over-year_improvement ..... [RUN]
+21 of 30 ERROR creating sql views model Dagster_dbt_core.year-over-year_improvement  [[31mERROR[0m in 0.02s]
+22 of 30 START sql views model Dagster_dbt_core.constructor_vs_driver_performance  [RUN]
+22 of 30 ERROR creating sql views model Dagster_dbt_core.constructor_vs_driver_performance  [[31mERROR[0m in 0.02s]
+23 of 30 START sql views model Dagster_dbt_core.fastest_lap_trends ............. [RUN]
+23 of 30 ERROR creating sql views model Dagster_dbt_core.fastest_lap_trends .... [[31mERROR[0m in 0.02s]
+24 of 30 START sql views model Dagster_dbt_core.impact_of_grid_position ........ [RUN]
+24 of 30 ERROR creating sql views model Dagster_dbt_core.impact_of_grid_position  [[31mERROR[0m in 0.02s]
+25 of 30 START sql views model Dagster_dbt_core.performance_by_track ........... [RUN]
+25 of 30 ERROR creating sql views model Dagster_dbt_core.performance_by_track .. [[31mERROR[0m in 0.02s]
+26 of 30 START sql views model Dagster_dbt_core.race_conditions ................ [RUN]
+26 of 30 ERROR creating sql views model Dagster_dbt_core.race_conditions ....... [[31mERROR[0m in 0.01s]
+27 of 30 START sql views model Dagster_dbt_core.top_performing_drivers ......... [RUN]
+27 of 30 ERROR creating sql views model Dagster_dbt_core.top_performing_drivers  [[31mERROR[0m in 0.02s]
+28 of 30 START sql views model Dagster_dbt_core.wins_per_circuit ............... [RUN]
+28 of 30 ERROR creating sql views model Dagster_dbt_core.wins_per_circuit ...... [[31mERROR[0m in 0.01s]
+29 of 30 START sql views model Dagster_dbt_core.drivers_consistency ............ [RUN]
+29 of 30 ERROR creating sql views model Dagster_dbt_core.drivers_consistency ... [[31mERROR[0m in 0.02s]
+30 of 30 START sql views model Dagster_dbt_core.reliability_analysis ........... [RUN]
+30 of 30 ERROR creating sql views model Dagster_dbt_core.reliability_analysis .. [[31mERROR[0m in 0.02s]
+
+Finished running 14 table models, 16 views models in 0 hours 0 minutes and 11.66 seconds (11.66s).
+
+[31mCompleted with 16 errors and 0 warnings:[0m
+
+  Compilation Error in model lap_time_patterns (models/core/qualifying_&_lap_time_insights/lap_time_patterns.sql)
+  No materialization 'views' was found for adapter mysql! (searched types 'default' and 'mysql')
+
+  Compilation Error in model pit_stop_efficiency (models/core/driver_insights/pit_stop_efficiency.sql)
+  No materialization 'views' was found for adapter mysql! (searched types 'default' and 'mysql')
+
+  Compilation Error in model qualifying_consistency (models/core/qualifying_&_lap_time_insights/qualifying_consistency.sql)
+  No materialization 'views' was found for adapter mysql! (searched types 'default' and 'mysql')
+
+  Compilation Error in model constructor_insights (models/core/constructor_insights/constructor_insights.sql)
+  No materialization 'views' was found for adapter mysql! (searched types 'default' and 'mysql')
+
+  Compilation Error in model race_frequency (models/core/track_performance/race_frequency.sql)
+  No materialization 'views' was found for adapter mysql! (searched types 'default' and 'mysql')
+
+  Compilation Error in model season_schedule (models/core/track_performance/season_schedule.sql)
+  No materialization 'views' was found for adapter mysql! (searched types 'default' and 'mysql')
+
+  Compilation Error in model year-over-year_improvement (models/core/constructor_insights/year-over-year_improvement.sql)
+  No materialization 'views' was found for adapter mysql! (searched types 'default' and 'mysql')
+
+  Compilation Error in model constructor_vs_driver_performance (models/core/constructor_insights/constructor_vs_driver_performance.sql)
+  No materialization 'views' was found for adapter mysql! (searched types 'default' and 'mysql')
+
+  Compilation Error in model fastest_lap_trends (models/core/driver_insights/fastest_lap_trends.sql)
+  No materialization 'views' was found for adapter mysql! (searched types 'default' and 'mysql')
+
+  Compilation Error in model impact_of_grid_position (models/core/qualifying_&_lap_time_insights/impact_of_grid_position.sql)
+  No materialization 'views' was found for adapter mysql! (searched types 'default' and 'mysql')
+
+  Compilation Error in model performance_by_track (models/core/driver_insights/performance_by_track.sql)
+  No materialization 'views' was found for adapter mysql! (searched types 'default' and 'mysql')
+
+  Compilation Error in model race_conditions (models/core/track_performance/race_conditions.sql)
+  No materialization 'views' was found for adapter mysql! (searched types 'default' and 'mysql')
+
+  Compilation Error in model top_performing_drivers (models/core/driver_insights/top_performing_drivers.sql)
+  No materialization 'views' was found for adapter mysql! (searched types 'default' and 'mysql')
+
+  Compilation Error in model wins_per_circuit (models/core/track_performance/wins_per_circuit.sql)
+  No materialization 'views' was found for adapter mysql! (searched types 'default' and 'mysql')
+
+  Compilation Error in model drivers_consistency (models/core/driver_insights/drivers_consistency.sql)
+  No materialization 'views' was found for adapter mysql! (searched types 'default' and 'mysql')
+
+  Compilation Error in model reliability_analysis (models/core/constructor_insights/reliability_analysis.sql)
+  No materialization 'views' was found for adapter mysql! (searched types 'default' and 'mysql')
+
+Done. PASS=14 WARN=0 ERROR=16 SKIP=0 TOTAL=30
